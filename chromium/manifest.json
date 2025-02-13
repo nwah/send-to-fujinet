@@ -1,0 +1,23 @@
+{
+  "name": "Send to FujiNet",
+  "version": "1.0",
+  "minimum_chrome_version": "120",
+  "description": "Run software from the web on your vintage computers via FujiNet",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "main.js"
+  },
+  "permissions": ["contextMenus"],
+  "host_permissions": [
+    "http://localhost/*",
+    "http://fujinet/*",
+    "http://fujinet.local/*"
+  ],
+  "icons": {
+    "16": "icon-16.png",
+    "48": "icon-48.png",
+    "128": "icon-128.png",
+    "512": "icon-512.png",
+    "1024": "icon-1024.png"
+  }
+}
